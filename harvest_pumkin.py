@@ -22,8 +22,8 @@ def harv_pumpkin():
                     if get_ground_type() != Grounds.Soil:
                         till()
                     plant(Entities.Pumpkin)
-                    if get_water()<=0.75:
-                        use_item(Items.Water)
+                    # if get_water()<=0.75:
+                    #     use_item(Items.Water)
                     move(North)
                 move(East)
         else:
@@ -35,8 +35,8 @@ def harv_pumpkin():
                     if get_ground_type() != Grounds.Soil:
                         till()
                     plant(Entities.Pumpkin)
-                    if get_water()<=0.75:
-                        use_item(Items.Water)
+                    # if get_water()<=0.75:
+                    #     use_item(Items.Water)
                     move(North)
                 move(East)
     
