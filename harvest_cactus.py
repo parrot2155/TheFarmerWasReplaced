@@ -1,14 +1,14 @@
-def harv_carrot():
-#당근 수확 함수
-    while num_items(Items.Hay)>=1000000 and num_items(Items.Wood)>=1000000:
+def harv_cact():
+#선인장 수확 함수
+    while num_items(Items.Pumpkin)<=100000:
         for i in range(get_world_size()):
             for j in range(get_world_size()):
                 if can_harvest():
                     harvest()
                 if get_ground_type() != Grounds.Soil:
                     till()
-                plant(Entities.Carrot)
-                # if get_water()<=0.75:
-                #     use_item(Items.Water)
+                plant(Entities.Cactus)
+                if get_water()==0.5:
+                    use_item(Items.Water)
                 move(North)    
             move(East)
