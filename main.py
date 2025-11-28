@@ -1,6 +1,7 @@
 import harvest_log
 import harvest_hay
 import harvest_carrot
+import harvest_pumkin
 
 while True:
     if num_items(Items.Hay)<=1000:
@@ -11,3 +12,6 @@ while True:
 
     change_hat(Hats.Green_Hat)
     harvest_carrot.harv_carrot()
+
+    change_hat(Hats.Pumpkin_Hat)
+    harvest_pumkin.harv_pumpkin()

@@ -9,5 +9,7 @@ def harv_carrot():
                     if get_ground_type() != Grounds.Soil:
                         till()
                     plant(Entities.Carrot)
-                    move(North)    
-                move(East)
+                    if get_water()<=0.75:
+                        use_item(Items.Water)
+                move(North)    
+            move(East)

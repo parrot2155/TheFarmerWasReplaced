@@ -22,8 +22,10 @@ def harv_wood():
                     if get_ground_type() != Grounds.Grassland:
                         till()
                     plant(Entities.Tree)
-                    move(North)
-                    move(North)
-                move(East)
+                    if get_water()<=0.75:
+                        use_item(Items.Water)
                 move(North)
+                move(North)
+            move(East)
+            move(North)
         
