@@ -13,7 +13,7 @@ def harv_sunf():
     #             move(North)    
     #         move(East)
     k = 1
-    while True:
+    while num_items(Items.Power)<=20000:
         if k%2==1:
             for i in range(get_world_size()):
                 for j in range(get_world_size()):

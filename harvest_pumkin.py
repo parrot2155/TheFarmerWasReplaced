@@ -12,7 +12,7 @@ def harv_pumpkin():
     #                 move(North)    
     #             move(East)
     i=0
-    while num_items(Items.Carrot)>=100000:
+    while num_items(Items.Pumpkin)<=200000:
         i=i+1
         if i%2 == 0:
             for j in range(get_world_size()):

@@ -1,6 +1,6 @@
 def harv_carrot():
 #당근 수확 함수
-    while num_items(Items.Hay)>=1000000 and num_items(Items.Wood)>=1000000:
+    while num_items(Items.Carrot)<=100000 or num_items(Items.Wood)<=10000:
         for i in range(get_world_size()):
             for j in range(get_world_size()):
                 if can_harvest():
