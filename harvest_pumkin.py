@@ -11,7 +11,7 @@ def harv_pumpkin():
     #                 plant(Entities.Pumpkin)
     #                 move(North)    
     #             move(East)
-    i=0
+    i=0 #심기 한번 뽑기 한번
     while num_items(Items.Pumpkin)<=200000:
         i=i+1
         if i%2 == 0:
